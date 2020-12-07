@@ -21,7 +21,8 @@ header .onja-link {
 }
 
 header,main {
-    max-width: 630px;
+    /* max-width: 900px; */
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -100,6 +101,11 @@ background-image: url(./assets/email.svg);
     height: 450px;
 }
 
+.section-projects--list .project:hover {
+    box-shadow: 0px 2px 5px 0px #455A64;
+
+}
+
 .project .figma {
     color: #6AA2EF;
 }
@@ -127,6 +133,10 @@ background-image: url(./assets/email.svg);
     text-decoration: none;
 }
 
+.demo:hover {
+    box-shadow: 0px 2px 3px 0px #2962FF;
+}
+
 .button-links {
     display: flex;
     gap: 1rem;
@@ -141,3 +151,8 @@ background-image: url(./assets/email.svg);
     border-radius: 12px;
     width: 50%;
 }
+
+/* .section-projects__navigation > ul {
+    display: flex;
+    justify-content: space-between;
+} */
