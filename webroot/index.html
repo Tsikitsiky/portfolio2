@@ -13,7 +13,7 @@
     <main>
         <header class="main__header">
             <div class="img">
-                <img src="assets/IMG_20201128_153204.jpg" alt="Sarah">
+                <img src="assets/SOC01432.JPG" alt="Sarah">
             </div>
             <div class="personal-details">
                 <div class="personal-detail__head">
@@ -23,14 +23,15 @@
                     </div>
                     <ul class="contact">
                         <li class="email"><a href="mailto:sarah.raz@onja.org?">sarah.raz@onja.org</a></li>
-                        <li class="phone-number">0347521106</li>
+                        <li class="github"><a href="https://github.com/Tsikitsiky">github.com/Tsikitsiky</a></li>
                     </ul>
                 </div>
                 <p>
-                    Self-motivated developer, who is willing to learn and create outstanding UI applications.  
+                    I am a junior front-end developer who is one of <a class="onja-link" href="https://onja.org/">Onja</a> Students. I learnt how to use Html, Css, Vanilla Javascript and React to create dynamic and beautiful websites.
+                    <!-- Self-motivated developer, who is willing to learn and create outstanding UI applications.   -->
                 </p>
                 <p>
-                    Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
+                    <!-- Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie. -->
                 </p>
             </div>
         </header>
@@ -41,14 +42,21 @@
             <nav class="section-projects__navigation">
                 <ul>
                     <li>
-                        <p>Responsive</p>
+                        <p class="tag-name">Responsive</p>
                         <ul class="section-projects--list responsive">
                             <li>
                                 <div class="project">
-                                    <img src="assets/front-end-final.png" />
+                                    <img src="assets/front-end-final.png" alt="front end final screenshot" />
                                     <p class="tag"> #Html #CSS #Responsive </p>
                                     <h4> Front-end final </h4>
-                                    <p> {project.description} </p>
+                                    <p>
+                                        This project was created from scratch. I used html and scss to create a responsive website following a given design.
+                                    </p>
+                                    <p>See the 
+                                        <a class="figma" href="https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1">
+                                        figma design
+                                        </a>
+                                    </p>
                                     <ul class="button-links">
                                         <li>
                                             <a class="demo" href="https://tsikitsiky.github.io/front-end-finals/">Demo</a>
@@ -61,10 +69,17 @@
                             </li>
                             <li>
                                 <div class="project">
-                                    <img src="assets/edie-homepage.png" />
+                                    <img src="assets/edie-homepage.png" alt="Edie Homepage screenshot" />
                                     <p class="tag"> #Html #CSS #Responsive </p>
                                     <h4> Edie Homepage </h4>
-                                    <p> {project.description} </p>
+                                    <p>
+                                        In this project, I used html and scss. It is following a given design and responsive.
+                                    </p>
+                                    <p>See the 
+                                        <a class="figma" href="https://www.figma.com/file/ahnGupP4JjTdVJDTRfMRF2">
+                                        figma design
+                                        </a>
+                                    </p>
                                     <ul class="button-links">
                                         <li>
                                             <a class="demo" href="https://edie-homepage-rs.netlify.app/">Demo</a>
@@ -78,14 +93,45 @@
                         </ul>
                     </li>
                     <li>
-                        <p>React</p>
+                        <p class="tag-name"> Vanilla Javascript</p>
+                        <div class="section-projects--list Javascript">
+                            <div class="project">
+                                <img src="assets/edie-homepage.png" alt="Edie Homepage screenshot" />
+                                    <p class="tag"> #JavaScript </p>
+                                    <h4> Birthday app </h4>
+                                    <p>
+                                        This project was created from scratch using vanilla javascript. An API was fetched to display the list of people.
+                                    </p>
+                                    <p>See the 
+                                        <a class="figma" href="https://www.figma.com/file/ahnGupP4JjTdVJDTRfMRF2">
+                                        figma design
+                                        </a>
+                                    </p>
+                                    <ul class="button-links">
+                                        <li>
+                                            <a class="demo" href="https://edie-homepage-rs.netlify.app/">Demo</a>
+                                        </li>
+                                        <li>
+                                            <a class="code" href="https://github.com/Tsikitsiky/edie-homepage">Code</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="tag-name">React</p>
                         <ul class="section-projects--list react">
                             <li>
                                 <div class="project">
-                                    <img src="assets/windBnb.png" />
+                                    <img src="assets/windBnb.png" alt="WindBNB screenshot" />
                                     <p class="tag"> #React </p>
                                     <h4> WindBNB Clone </h4>
-                                    <p> {project.description} </p>
+                                    <p> In this project, I used React and css to create a responsive and dynamic page. It is created with a data from an API and similar to a given design. </p>
+                                    <p>See the 
+                                        <a class="figma" href="https://www.figma.com/file/KGNH8dbclXT1vzXLyPrBeu">
+                                            figma design
+                                        </a>
+                                    </p>
                                     <ul class="button-links">
                                         <li>
                                             <a class="demo" href="https://loving-albattani-a16796.netlify.app/">Demo</a>
@@ -98,10 +144,10 @@
                             </li>
                             <li>
                                 <div class="project">
-                                    <img src="assets/first.png" />
+                                    <img src="assets/first.png" alt="Country quiz screenshot" />
                                     <p class="tag"> #React </p>
                                     <h4> Country Quiz </h4>
-                                    <p> {project.description} </p>
+                                    <p> This project is a quiz created with data from an API. There are three types of question asked randomly. It is built with React</p>
                                     <ul class="button-links">
                                         <li>
                                             <a class="demo" href="https://country-quiz-sarah.netlify.app/">Demo</a>
