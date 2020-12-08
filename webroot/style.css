@@ -146,7 +146,7 @@ background-image: url(./assets/email.svg);
 
 .code {
     background-color: transparent;
-    padding: 9px 12px;
+    padding: 13px 35px;
     border: 1px solid #4F4F4F;
     color: #4F4F4F;
     border-radius: 10px;
@@ -154,7 +154,7 @@ background-image: url(./assets/email.svg);
 }
 
 .demo {
-    padding: 9px 12px;
+    padding: 13px 35px;
     border-radius: 10px;
     background-color: #6AA2EF;
     color: white;
