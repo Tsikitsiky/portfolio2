@@ -126,8 +126,8 @@ background-image: url(./assets/email.svg);
     justify-content: space-between;
     gap: 1rem;
     padding-bottom: 2rem;
-    max-width: 300px;
-    /* height: 450px; */
+    max-width: 320px;
+    height: 450px;
 }
 
 .section-projects--list .project:hover {
