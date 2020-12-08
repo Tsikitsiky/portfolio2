@@ -20,14 +20,10 @@ header .onja-link {
     color: #6AA2EF;
 }
 
-header,main {
-    /* max-width: 900px; */
-    max-width: 600px;
-    margin: 0 auto;
-}
 
 .main__header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
     background-color: #ffffff;
@@ -36,8 +32,7 @@ header,main {
 }
 
 .img {
-    max-width: 150px;
-    max-height: 200px;
+    max-width: 350px;
 }
 
 .img img {
@@ -49,17 +44,15 @@ header,main {
 .personal-details {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 1rem;
 }
 
-.personal-detail__head {
-    display: flex;
-    justify-content: space-between;
+.contact{
+    margin-top: 1rem;
 }
 
 .contact li {
     padding-left: 2rem;
-    margin-bottom: 1rem;
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 1rem;
@@ -73,6 +66,41 @@ background-image: url(./assets/email.svg);
     background-image: url(./assets/github.svg);
 }
 
+@media(min-width: 400px) {
+    header,main {
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+
+    .main__header {
+    flex-direction: row;
+}
+
+.personal-detail__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-details {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.contact {
+    margin: 0;
+}
+
+.contact li {
+    margin-bottom: 1rem;
+}
+
+.img {
+    max-width: 300px;
+}
+
+}
+
 /* projects */
 
 .section-projects__header {
@@ -84,6 +112,7 @@ background-image: url(./assets/email.svg);
 
 .section-projects--list {
     display: flex;
+    flex-direction: column;
     justify-content: space-between; 
 }
 
@@ -97,8 +126,8 @@ background-image: url(./assets/email.svg);
     justify-content: space-between;
     gap: 1rem;
     padding-bottom: 2rem;
-    max-width: 250px;
-    height: 450px;
+    max-width: 300px;
+    /* height: 450px; */
 }
 
 .section-projects--list .project:hover {
@@ -156,3 +185,14 @@ background-image: url(./assets/email.svg);
     display: flex;
     justify-content: space-between;
 } */
+
+@media(min-width: 400px) {
+    .section-projects--list {
+        flex-direction: row;
+    }
+
+    .section-projects--list .project {
+        max-width: 270px;
+        max-height: 450px;
+    }
+}
