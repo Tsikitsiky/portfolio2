@@ -162,6 +162,10 @@ background-image: url(./assets/email.svg);
     text-decoration: none;
 }
 
+.code:hover {
+    box-shadow: 0px 2px 3px 0px #455A64;
+}
+
 .demo:hover {
     box-shadow: 0px 2px 3px 0px #2962FF;
 }
