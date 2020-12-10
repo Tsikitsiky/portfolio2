@@ -1,9 +1,53 @@
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: normal;
+    src: local("Montserrat Medium"),
+        local("Montserrat-Medium"),
+        url("../fonts/monserrat-medium-webfont.woff2") format("woff2"), 
+        url("../fonts/monserrat-medium-webfont.woff") format("woff"); 
+    }
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-style: normal;
+    src: local("Montserrat SemiBold"),
+        local("Montserrat-SemiBold"),
+        url("../fonts/monserrat-semibold-webfont.woff2") format("woff2"), 
+        url("../fonts/monserrat-semibold-webfont.woff") format("woff"); 
+    }
+
 body {
     background-color: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p, h1, h2, h3, h4, ul {
     margin: 0;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+}
+
+h1, h2, h3, h4 {
+    color: #4F4F4F;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 ul {
@@ -14,6 +58,9 @@ ul {
 a {
     text-decoration: none;
     color: #4F4F4F;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
 }
 
 header .onja-link {
@@ -29,6 +76,10 @@ header .onja-link {
     background-color: #ffffff;
     padding: 1rem;
     border-radius: 12px;
+}
+
+.main__header p {
+    font-size: 18px;
 }
 
 .img {
@@ -74,6 +125,8 @@ background-image: url(./assets/email.svg);
 
     .main__header {
     flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
 }
 
 .personal-detail__head {
@@ -83,7 +136,8 @@ background-image: url(./assets/email.svg);
 
 .personal-details {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 1rem;
     margin: auto;
 }
 
@@ -92,7 +146,7 @@ background-image: url(./assets/email.svg);
 }
 
 .contact li {
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
 .img {
@@ -126,8 +180,7 @@ background-image: url(./assets/email.svg);
     justify-content: space-between;
     gap: 1rem;
     padding-bottom: 2rem;
-    max-width: 320px;
-    height: 450px;
+    max-width: 340px;
 }
 
 .section-projects--list .project:hover {
@@ -185,18 +238,28 @@ background-image: url(./assets/email.svg);
     width: 50%;
 }
 
-/* .section-projects__navigation > ul {
-    display: flex;
-    justify-content: space-between;
-} */
 
 @media(min-width: 400px) {
-    .section-projects--list {
-        flex-direction: row;
-    }
 
     .section-projects--list .project {
-        max-width: 270px;
-        max-height: 450px;
+       flex-direction: row;
+       max-width: 100%;
+       gap: 52px;
+       max-height: 311px;
+       padding: 1rem;
+       justify-content: flex-start;
+    }
+
+    .projects-text__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+    .project img {
+        max-width: 384px;
+        height: 300px;
+        border-radius: 12px;
     }
 }
