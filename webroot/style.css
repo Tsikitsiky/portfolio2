@@ -17,7 +17,7 @@
         url("../fonts/monserrat-semibold-webfont.woff2") format("woff2"), 
         url("../fonts/monserrat-semibold-webfont.woff") format("woff"); 
     }
-
+    
 body {
     background-color: #eeeeee;
     font-family: 'Montserrat', sans-serif;
@@ -39,7 +39,7 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     line-height: 29px;
 }
@@ -74,7 +74,7 @@ header .onja-link {
     justify-content: space-between;
     gap: 2rem;
     background-color: #ffffff;
-    padding: 1rem;
+    padding: 22px;
     border-radius: 12px;
 }
 
@@ -96,6 +96,10 @@ header .onja-link {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.personal-details > p {
+    padding-right: 34px;
 }
 
 .contact{
@@ -159,8 +163,8 @@ background-image: url(./assets/email.svg);
 
 .section-projects__header {
     background-color: #ffffff;
-    padding: 1rem;
-    margin-top: 1rem;
+    padding: 22px;
+    margin: 2rem 0;
     border-radius: 12px;
 }
 
@@ -172,14 +176,13 @@ background-image: url(./assets/email.svg);
 
 .section-projects--list .project {
     background-color: white;
-    padding: 1rem;
+    padding: 22px;
     border-radius: 12px;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
-    padding-bottom: 2rem;
     max-width: 340px;
 }
 
@@ -229,7 +232,6 @@ background-image: url(./assets/email.svg);
 }
 
 .tag-name {
-    padding: 1rem;
     background-color: #ffffff;
     color: #6AA2EF;
     border: 1px #6AA2EF solid;
@@ -246,7 +248,6 @@ background-image: url(./assets/email.svg);
        max-width: 100%;
        gap: 52px;
        max-height: 311px;
-       padding: 1rem;
        justify-content: flex-start;
     }
 
@@ -255,6 +256,7 @@ background-image: url(./assets/email.svg);
         flex-direction: column;
         justify-content: space-around;
         gap: 1rem;
+        padding-right: 24px;
     }
 
     .project img {
