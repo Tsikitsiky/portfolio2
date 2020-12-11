@@ -80,10 +80,11 @@ header .onja-link {
 
 .main__header p {
     font-size: 18px;
+    line-height: 21px;
 }
 
 .img {
-    max-width: 350px;
+    max-width: 676px;
 }
 
 .img img {
@@ -103,14 +104,15 @@ header .onja-link {
 }
 
 .contact{
-    margin-top: 1rem;
+    margin-top: 30px;
+    margin-bottom: 12px;
 }
 
 .contact li {
     padding-left: 2rem;
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: 1rem;
+    background-size: 20px;
 }
 
 .email {
@@ -121,7 +123,7 @@ background-image: url(./assets/email.svg);
     background-image: url(./assets/github.svg);
 }
 
-@media(min-width: 400px) {
+@media(min-width: 720px) {
     header,main {
         max-width: 1040px;
         margin: 0 auto;
@@ -181,9 +183,9 @@ background-image: url(./assets/email.svg);
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 1rem;
-    max-width: 340px;
+    max-width: 676px;
+    height: auto;
 }
 
 .section-projects--list .project:hover {
@@ -196,8 +198,9 @@ background-image: url(./assets/email.svg);
 }
 
 .project img {
-    width: 100%;
-    height: 200px;
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 12px;
 }
 
 .code {
@@ -229,6 +232,7 @@ background-image: url(./assets/email.svg);
 .button-links {
     display: flex;
     gap: 1rem;
+    margin-block: 1rem;
 }
 
 .tag-name {
@@ -240,8 +244,16 @@ background-image: url(./assets/email.svg);
     width: 50%;
 }
 
+.projects-text__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    padding-right: 24px;
+}
 
-@media(min-width: 400px) {
+
+@media(min-width: 720px) {
 
     .section-projects--list .project {
        flex-direction: row;
@@ -251,17 +263,12 @@ background-image: url(./assets/email.svg);
        justify-content: flex-start;
     }
 
-    .projects-text__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap: 1rem;
-        padding-right: 24px;
+    .project img {
+        width: 384px;
+        height: 300px;
     }
 
-    .project img {
-        max-width: 384px;
-        height: 300px;
-        border-radius: 12px;
+    .button-links {
+        margin-block: 0;
     }
 }
