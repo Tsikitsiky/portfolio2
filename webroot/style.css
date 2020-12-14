@@ -156,7 +156,7 @@ background-image: url(./assets/email.svg);
 }
 
 .img {
-    max-width: 300px;
+    max-width: 270px;
 }
 
 }
@@ -259,13 +259,13 @@ background-image: url(./assets/email.svg);
        flex-direction: row;
        max-width: 100%;
        gap: 52px;
-       max-height: 311px;
+       height: 311px;
        justify-content: flex-start;
     }
 
     .project img {
         width: 384px;
-        height: 300px;
+        /* height: 300px; */
     }
 
     .button-links {
