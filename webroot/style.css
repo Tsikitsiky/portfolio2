@@ -21,6 +21,7 @@
 body {
     background-color: #eeeeee;
     font-family: 'Montserrat', sans-serif;
+    margin-block: 70px;
 }
 
 p, h1, h2, h3, h4, ul {
