@@ -1,91 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    
-</head>
-<body>
-    <header>
-    </header>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  </head>
+  <body>
+    <header></header>
     <main>
-        <header class="main__header">
-            <div class="img">
-                <img src="assets/SOC01518-3.JPG" alt="Sarah">
+      <header class="main__header">
+        <div class="img">
+          <img src="assets/rs-img.jpg" alt="Sarah" />
+        </div>
+        <div class="personal-details">
+          <div class="personal-detail__head">
+            <div>
+              <h2>Sarah Razanatsoa</h2>
+              <p>Front-end developer</p>
             </div>
-            <div class="personal-details">
-                <div class="personal-detail__head">
-                    <div>
-                        <h2>Sarah Razanatsoa</h2>
-                        <p>Front-end developer</p>
-                    </div>
-                    <ul class="contact">
-                        <li class="email"><a href="mailto:sarah.raz@onja.org?">sarah.raz@onja.org</a></li>
-                        <li class="github"><a href="https://github.com/Tsikitsiky">github.com/Tsikitsiky</a></li>
-                    </ul>
-                </div>
-                <p>
-                    I am a front-end developer and graduate of <a class="inline-link" href="/onja.org">Onja</a>. I’m highly motivated and above all I love learning - whether it’s coding, languages or almost anything else! By nature I am a very social person so I enjoy interacting and collaborating with others.
-                </p>
-                <p>
-                    I’m confident with HTML, CSS/SASS, Vanilla Javascript and React and am excited to continue to develop and add to these skills.
-                </p>
-                <p>
-                    I am from Fenoarivo Antsinanana, a beautiful beach town on the East Coast of Madagascar but now I live in Mahanoro, where Onja is based. I would like to find a company and team that appreciates me and where I can contribute in the long term. 
-                </p>
-            </div>
+            <ul class="contact">
+              <li class="email">
+                <a href="mailto:sarah.raz@onja.org?">sarah.raz@onja.org</a>
+              </li>
+              <li class="github">
+                <a href="https://github.com/Tsikitsiky"
+                  >github.com/Tsikitsiky</a
+                >
+              </li>
+            </ul>
+          </div>
+          <p>
+            I am a frontend developer with professional experience writing React
+            and React Native applications.
+          </p>
+          <p>
+            I’m highly motivated and above all I love learning - whether it’s
+            coding, languages or almost anything else! By nature I am a very
+            social person so I enjoy interacting and collaborating with others.
+          </p>
+          <p>
+            I’m confident with HTML, CSS/SASS, Vanilla Javascript and React and
+            am excited to continue to develop and add to these skills.
+          </p>
+        </div>
+      </header>
+      <section class="section-projects">
+        <header class="section-projects__header">
+          <h2>Projects</h2>
         </header>
-        <section class="section-projects">
-            <header class="section-projects__header">
-                <h2>Projects</h2>
-            </header>
-            <nav class="section-projects__navigation">
-                <ul class="section-projects--list responsive">
+        <nav class="section-projects__navigation">
+          <ul class="section-projects--list responsive">
+            <li>
+              <div class="project">
+                <img src="assets/first-2.png" alt="Country quiz screenshot" />
+                <div class="projects-text__container">
+                  <p class="tag">#React</p>
+                  <h4>Country Quiz</h4>
+                  <p>
+                    I created this fun quiz game using React. It employs hooks.
+                  </p>
+                  <p>
+                    See
+                    <a
+                      class="inline-link"
+                      href="https://www.figma.com/file/Gw0ZNBbYN8asqFlZWy3jG1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      figma design
+                    </a>
+                  </p>
+                  <ul class="button-links">
                     <li>
-                        <div class="project">
-                            <img src="assets/first-2.png" alt="Country quiz screenshot" />
-                            <div class="projects-text__container">
-                                <p class="tag"> #React </p>
-                                <h4> Country Quiz </h4>
-                                <p> I created this fun quiz game using React. It employs hooks. 
-                                </p>
-                                <p>See 
-                                    <a class="inline-link" 
-                                        href="https://www.figma.com/file/Gw0ZNBbYN8asqFlZWy3jG1"
-                                        target="_blank" 
-                                        rel="noopener noreferrer">
-                                    figma design
-                                    </a>
-                                </p>
-                                <ul class="button-links">
-                                    <li>
-                                        <a class="demo" 
-                                            href="https://country-quiz-sarah.netlify.app/" target="_blank" 
-                                            rel="noopener noreferrer">
-                                            Demo
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="code" 
-                                        href="https://github.com/Tsikitsiky/country-quiz" target="_blank" 
-                                        rel="noopener noreferrer">
-                                        Code
-                                    </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                      <a
+                        class="demo"
+                        href="https://country-quiz-sarah.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Demo
+                      </a>
                     </li>
-                    <!-- <li>
+                    <li>
+                      <a
+                        class="code"
+                        href="https://github.com/Tsikitsiky/country-quiz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Code
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- <li>
                         <div class="project">
-                            <img src="assets/windBnb.png" alt="WindBNB screenshot" />
+                            <img src="assets/windBnb.png" alt="mahanoro station screenshot" />
                             <div class="projects-text__container">
-                                <p class="tag"> #React </p>
+                                <p class="tag"> #React #Redux #Compound component #Styled component</p>
                                 <h4> WindBNB Clone </h4>
-                                <p> In this project, I used React and css to create a responsive and dynamic page. It is created with a data from an API and similar to a given design. </p>
+                                <p> In this project, I used React, Redux , Compound components and Styled components to create a booking seats app. </p>
                                 <p>See the 
                                     <a class="inline-link" 
                                         href="https://www.figma.com/file/KGNH8dbclXT1vzXLyPrBeu" target="_blank" 
@@ -96,14 +114,14 @@
                                 <ul class="button-links">
                                     <li>
                                         <a class="demo" 
-                                            href="https://loving-albattani-a16796.netlify.app/" target="_blank" 
+                                            href="https://mahanoro-station-rs.netlify.app/" target="_blank" 
                                             rel="noopener noreferrer">
                                             Demo
                                         </a>
                                     </li>
                                     <li>
                                         <a class="code" 
-                                            href="https://github.com/Tsikitsiky/airbnb-clone" target="_blank" 
+                                            href="https://github.com/Tsikitsiky/mahanoro-station" target="_blank" 
                                             rel="noopener noreferrer">
                                             Code
                                         </a>
@@ -112,114 +130,148 @@
                             </div>
                         </div>
                     </li> -->
+            <li>
+              <div class="project">
+                <img
+                  src="assets/birthday-app-2.jpg"
+                  alt="Birthday App screenshot"
+                />
+                <div class="projects-text__container">
+                  <p class="tag">#JavaScript</p>
+                  <h4>Vanilla JS application</h4>
+                  <p>
+                    I built this CRUD app from scratch using ES6 and ES2020. It
+                    displays a list of people with their birthdays from an API.
+                    We can filter by name and by month, we can edit, we can add
+                    other people to the list and we can delete from the list.
+                  </p>
+                  <ul class="button-links">
                     <li>
-                        <div class="project">
-                            <img src="assets/birthday-app-2.jpg" alt="Birthday App screenshot" />
-                            <div class="projects-text__container">
-                                <p class="tag"> #JavaScript </p>
-                                <h4> Vanilla JS application</h4>
-                                <p>
-                                    I built this CRUD app from scratch using ES6 and ES2020. It displays a list of people with their birthdays from an API. We can filter by name and by month,  we can edit, we can add other people to the list and we can delete from the list.
-                                </p>
-                                <ul class="button-links">
-                                    <li>
-                                        <a class="demo" 
-                                            href="https://birthday-app-rs.netlify.app/"
-                                            target="_blank" 
-                                            rel="noopener noreferrer">
-                                            Demo
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="code" 
-                                            href="https://github.com/Tsikitsiky/birthday-app"
-                                            target="_blank" 
-                                            rel="noopener noreferrer">
-                                            Code
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                      <a
+                        class="demo"
+                        href="https://birthday-app-rs.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Demo
+                      </a>
                     </li>
                     <li>
-                        <div class="project">
-                            <img src="assets/front-end-final.png" alt="front end final screenshot" />
-                            <div class="projects-text__container">
-                                <p class="tag"> #Html #CSS #Responsive </p>
-                                <h4> Photography homepage </h4>
-                                <p>
-                                    I built this page from scratch using semantic HTML, CSS3 and SASS to create a responsive webpage following BEM notation.
-                                </p>
-                                <p>See 
-                                    <a class="inline-link" 
-                                        href="https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1" target="_blank" 
-                                        rel="noopener noreferrer">
-                                    figma design
-                                    </a>
-                                </p>
-                                <ul class="button-links">
-                                    <li>
-                                        <a class="demo" 
-                                            href="https://tsikitsiky.github.io/front-end-finals/"
-                                            target="_blank" 
-                                            rel="noopener noreferrer">
-                                            Demo
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="code" 
-                                            href="https://github.com/Tsikitsiky/front-end-finals"
-                                            target="_blank" 
-                                            rel="noopener noreferrer">
-                                            Code
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                      <a
+                        class="code"
+                        href="https://github.com/Tsikitsiky/birthday-app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Code
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="project">
+                <img
+                  src="assets/front-end-final.png"
+                  alt="front end final screenshot"
+                />
+                <div class="projects-text__container">
+                  <p class="tag">#Html #CSS #Responsive</p>
+                  <h4>Photography homepage</h4>
+                  <p>
+                    I built this page from scratch using semantic HTML, CSS3 and
+                    SASS to create a responsive webpage following BEM notation.
+                  </p>
+                  <p>
+                    See
+                    <a
+                      class="inline-link"
+                      href="https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      figma design
+                    </a>
+                  </p>
+                  <ul class="button-links">
+                    <li>
+                      <a
+                        class="demo"
+                        href="https://tsikitsiky.github.io/front-end-finals/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Demo
+                      </a>
                     </li>
                     <li>
-                        <div class="project">
-                            <img src="assets/edie-homepage-2.jpg" alt="Edie Homepage screenshot" />
-                            <div class="projects-text__container">
-                                <p class="tag"> #Html #CSS #Responsive </p>
-                                <h4>  Web consultancy Homepage </h4>
-                                <p>
-                                    I built this page from scratch using semantic HTML, CSS3 and SASS to create a responsive webpage. It follows BEM notation.
-                                </p>
-                                <p>See 
-                                    <a class="inline-link" 
-                                        href="https://www.figma.com/file/ahnGupP4JjTdVJDTRfMRF2"
-                                        target="_blank" 
-                                        rel="noopener noreferrer">
-                                    figma design
-                                    </a>
-                                </p>
-                                <ul class="button-links">
-                                    <li>
-                                        <a class="demo" 
-                                            href="https://edie-homepage-rs.netlify.app/"
-                                            target="_blank" 
-                                            rel="noopener noreferrer">
-                                            Demo
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="code" 
-                                            href="https://github.com/Tsikitsiky/edie-homepage"
-                                            target="_blank" 
-                                            rel="noopener noreferrer">
-                                            Code
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                      <a
+                        class="code"
+                        href="https://github.com/Tsikitsiky/front-end-finals"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Code
+                      </a>
                     </li>
-                </ul>
-            </nav>
-        </section>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="project">
+                <img
+                  src="assets/edie-homepage-2.jpg"
+                  alt="Edie Homepage screenshot"
+                />
+                <div class="projects-text__container">
+                  <p class="tag">#Html #CSS #Responsive</p>
+                  <h4>Web consultancy Homepage</h4>
+                  <p>
+                    I built this page from scratch using semantic HTML, CSS3 and
+                    SASS to create a responsive webpage. It follows BEM
+                    notation.
+                  </p>
+                  <p>
+                    See
+                    <a
+                      class="inline-link"
+                      href="https://www.figma.com/file/ahnGupP4JjTdVJDTRfMRF2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      figma design
+                    </a>
+                  </p>
+                  <ul class="button-links">
+                    <li>
+                      <a
+                        class="demo"
+                        href="https://edie-homepage-rs.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Demo
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="code"
+                        href="https://github.com/Tsikitsiky/edie-homepage"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Code
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </main>
-</body>
+  </body>
 </html>

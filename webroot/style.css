@@ -1,274 +1,276 @@
 @font-face {
-    font-family: "Montserrat";
-    font-weight: 500;
-    font-style: normal;
-    src: local("Montserrat Medium"),
-        local("Montserrat-Medium"),
-        url("../fonts/monserrat-medium-webfont.woff2") format("woff2"), 
-        url("../fonts/monserrat-medium-webfont.woff") format("woff"); 
-    }
-
-@font-face {
-    font-family: "Montserrat";
-    font-weight: 600;
-    font-style: normal;
-    src: local("Montserrat SemiBold"),
-        local("Montserrat-SemiBold"),
-        url("../fonts/monserrat-semibold-webfont.woff2") format("woff2"), 
-        url("../fonts/monserrat-semibold-webfont.woff") format("woff"); 
-    }
-    
-body {
-    background-color: #eeeeee;
-    font-family: 'Montserrat', sans-serif;
-    margin-block: 70px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'),
+    url('../fonts/monserrat-medium-webfont.woff2') format('woff2'),
+    url('../fonts/monserrat-medium-webfont.woff') format('woff');
 }
 
-p, h1, h2, h3, h4, ul {
-    margin: 0;
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+    url('../fonts/monserrat-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/monserrat-semibold-webfont.woff') format('woff');
+}
+
+body {
+  background-color: #eeeeee;
+  font-family: 'Montserrat', sans-serif;
+  margin-block: 70px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul {
+  margin: 0;
 }
 
 p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #828282;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
 }
 
-h1, h2, h3, h4 {
-    color: #4F4F4F;
+h1,
+h2,
+h3,
+h4 {
+  color: #4f4f4f;
 }
 
 h2 {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 h4 {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: #4F4F4F;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21px;
+  text-decoration: none;
+  color: #4f4f4f;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
 }
 
 header .onja-link {
-    color: #6AA2EF;
+  color: #6aa2ef;
 }
 
-
 .main__header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2rem;
-    background-color: #ffffff;
-    padding: 22px;
-    border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: #ffffff;
+  padding: 22px;
+  border-radius: 12px;
 }
 
 .main__header p {
-    font-size: 18px;
-    line-height: 21px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .img {
-    max-width: 676px;
+  max-width: 676px;
 }
 
 .img img {
-    width: 100%;
-    border-radius: 12px;
+  width: 100%;
+  border-radius: 12px;
 }
 
 .personal-details {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .personal-details > p {
-    padding-right: 34px;
-}
-
-.contact{
-    margin-top: 30px;
-    margin-bottom: 12px;
-}
-
-.contact li {
-    padding-left: 2rem;
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 20px;
-}
-
-.email {
-background-image: url(./assets/email.svg);
-}
-
-.github {
-    background-image: url(./assets/github.svg);
-}
-
-@media(min-width: 720px) {
-    header,main {
-        max-width: 1040px;
-        margin: 0 auto;
-    }
-
-    .main__header {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 2rem;
-}
-
-.personal-detail__head {
-    display: flex;
-    justify-content: space-between;
-}
-
-.personal-details {
-    display: flex;
-    /* justify-content: space-between; */
-    gap: 1rem;
-    margin: auto;
+  padding-right: 34px;
 }
 
 .contact {
-    margin: 0;
+  margin-top: 30px;
+  margin-bottom: 12px;
 }
 
 .contact li {
+  padding-left: 2rem;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.email {
+  background-image: url(./assets/email.svg);
+}
+
+.github {
+  background-image: url(./assets/github.svg);
+}
+
+@media (min-width: 720px) {
+  header,
+  main {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+
+  .main__header {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .personal-detail__head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .personal-details {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1.5rem;
+    margin: auto;
+  }
+
+  .contact {
+    margin: 0;
+  }
+
+  .contact li {
     margin-bottom: 10px;
-}
+  }
 
-.img {
+  .img {
     max-width: 270px;
-}
-
+  }
 }
 
 /* projects */
 
 .section-projects__header {
-    background-color: #ffffff;
-    padding: 22px;
-    margin: 2rem 0;
-    border-radius: 12px;
+  background-color: #ffffff;
+  padding: 22px;
+  margin: 2rem 0;
+  border-radius: 12px;
 }
 
 .section-projects--list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .section-projects--list .project {
-    background-color: white;
-    padding: 22px;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 676px;
-    height: auto;
+  background-color: white;
+  padding: 22px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 676px;
+  height: auto;
 }
 
 .section-projects--list .project:hover {
-    box-shadow: 0px 2px 5px 0px #455A64;
-
+  box-shadow: 0px 2px 5px 0px #455a64;
 }
 
- .inline-link {
-    color: #6AA2EF;
+.inline-link {
+  color: #6aa2ef;
 }
 
 .project img {
-    max-width: 100%;
-    max-height: 400px;
-    border-radius: 12px;
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 12px;
 }
 
 .code {
-    background-color: transparent;
-    padding: 13px 35px;
-    border: 1px solid #4F4F4F;
-    color: #4F4F4F;
-    border-radius: 10px;
-    text-decoration: none;
+  background-color: transparent;
+  padding: 13px 35px;
+  border: 1px solid #4f4f4f;
+  color: #4f4f4f;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .demo {
-    padding: 13px 35px;
-    border-radius: 10px;
-    background-color: #6AA2EF;
-    color: white;
-    border: none;
-    text-decoration: none;
+  padding: 13px 35px;
+  border-radius: 10px;
+  background-color: #6aa2ef;
+  color: white;
+  border: none;
+  text-decoration: none;
 }
 
 .code:hover {
-    box-shadow: 0px 2px 3px 0px #455A64;
+  box-shadow: 0px 2px 3px 0px #455a64;
 }
 
 .demo:hover {
-    box-shadow: 0px 2px 3px 0px #2962FF;
+  box-shadow: 0px 2px 3px 0px #2962ff;
 }
 
 .button-links {
-    display: flex;
-    gap: 1rem;
-    margin-block: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-block: 1rem;
 }
 
 .tag-name {
-    background-color: #ffffff;
-    color: #6AA2EF;
-    border: 1px #6AA2EF solid;
-    margin: 1rem 0;
-    border-radius: 12px;
-    width: 50%;
+  background-color: #ffffff;
+  color: #6aa2ef;
+  border: 1px #6aa2ef solid;
+  margin: 1rem 0;
+  border-radius: 12px;
+  width: 50%;
 }
 
 .projects-text__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 1rem;
-    padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  padding-right: 24px;
 }
 
+@media (min-width: 720px) {
+  .section-projects--list .project {
+    flex-direction: row;
+    max-width: 100%;
+    gap: 52px;
+    height: 311px;
+    justify-content: flex-start;
+  }
 
-@media(min-width: 720px) {
+  .project img {
+    width: 384px;
+    /* height: 300px; */
+  }
 
-    .section-projects--list .project {
-       flex-direction: row;
-       max-width: 100%;
-       gap: 52px;
-       height: 311px;
-       justify-content: flex-start;
-    }
-
-    .project img {
-        width: 384px;
-        /* height: 300px; */
-    }
-
-    .button-links {
-        margin-block: 0;
-    }
+  .button-links {
+    margin-block: 0;
+  }
 }
