@@ -162,7 +162,7 @@ header .link {
   }
 
   .img {
-    max-width: 270px;
+    width: 100%;
   }
 }
 
@@ -262,12 +262,13 @@ header .link {
     max-width: 100%;
     gap: 52px;
     height: 311px;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .project img {
-    width: 384px;
-    /* height: 300px; */
+    width: 300px;
+    height: 100%;
+    flex-grow: 1;
   }
 
   .button-links {
