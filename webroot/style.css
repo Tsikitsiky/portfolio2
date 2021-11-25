@@ -128,7 +128,20 @@ header .link {
   background-image: url(./assets/github.svg);
 }
 
-@media (min-width: 720px) {
+@media (min-width: 480px) {
+  .img img{
+    width: 100%;
+    max-width: 376px;
+  }
+
+  .project img {
+    /* width: 100%; */
+    max-width: 376px;
+  }
+  
+}
+
+@media (min-width: 811px) {
   header,
   main {
     max-width: 1040px;
@@ -254,19 +267,24 @@ header .link {
   justify-content: space-around;
   gap: 1rem;
   padding-right: 24px;
+  padding-bottom: 10px;
 }
 
-@media (min-width: 720px) {
+
+
+@media (min-width: 780px) {
   .section-projects--list .project {
     flex-direction: row;
     max-width: 100%;
     gap: 52px;
     height: 311px;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .project img {
-    width: 370px;
+    max-width: 376px;
+    width: 376px;
+    max-height: 100%;
   }
 
   .button-links {
