@@ -96,6 +96,7 @@ header .link {
 .img img {
   width: 100%;
   /* max-width: 100%; */
+  height: 100%;
   border-radius: 12px;
 }
 
@@ -127,6 +128,15 @@ header .link {
 
 .github {
   background-image: url(./assets/github.svg);
+}
+
+@media (min-width: 480px) {
+  .img img {
+    width: 270px;
+    /* max-width: 100%; */
+    height: 100%;
+  }
+  
 }
 
 @media (min-width: 811px) {
@@ -164,6 +174,7 @@ header .link {
 
   .img img {
     width: 250px;
+    height: auto;
   }
 }
 
@@ -204,8 +215,7 @@ header .link {
 
 .project img {
   width: 100%;
-  /* max-width: 100%; */
-  max-height: 400px;
+  height: 100%;
   border-radius: 12px;
 }
 
@@ -260,6 +270,14 @@ header .link {
 }
 
 
+@media (min-width: 480px) {
+  .project img {
+    width: 350px;
+    height: 100%;
+  }
+  
+}
+
 
 @media (min-width: 780px) {
   .section-projects--list .project {
@@ -282,15 +300,4 @@ header .link {
   }
 }
 
-@media (min-width: 480px) {
-  .img img {
-    width: 270px;
-    /* max-width: 100%; */
-  }
-
-  .project img {
-    width: 350px;
-  }
-  
-}
 
